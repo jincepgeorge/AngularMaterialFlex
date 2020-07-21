@@ -1,0 +1,41 @@
+<section fxLayout="column" fxFlexAlign="stretch">
+  <div fxFlexAlign="center">
+    <h1>Welcome to the Survey Builder</h1>
+  </div>
+
+  <h2>A simple & powerful online survey tool.</h2>
+  <div></div>
+
+  <!-- <mat-tab-group>
+        <mat-tab label="Material Components"> 
+          <p>We are going to use different material components to create nice looking angular app.</p> 
+        </mat-tab>
+        <mat-tab label="Consume .NET Core Web API">
+           <p>We will consume our .NET Core application. Basically, we will create complete CRUD client app.</p>
+          </mat-tab>
+        <mat-tab label="Fully responsive navigation menu">
+           <p>By using material components, we are going to create fully responsive navigation menu, with its side-bar as well.</p>
+          </mat-tab>
+      </mat-tab-group> -->
+  <div class="content" fxLayout="row wrap" fxLayoutGap="16px grid">
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let num of [1,2,3,4,5,6,7]">
+      <mat-card class="mat-elevation-z4">
+        <mat-card-header>
+          <mat-card-title>Mountains {{num}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image [src]="getRandomImage()">
+        <mat-card-content>
+          <p>
+            Free SurveyPlanet users can choose between ten colorful survey themes. Pro users can build custom themes by choosing their own colors, fonts and background images.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+
+
+</section>

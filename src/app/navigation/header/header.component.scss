@@ -1,0 +1,32 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+ 
+a:hover, a:active{
+    color: lightgray;
+}
+ 
+.navigation-items{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ 
+mat-toolbar{
+    border-radius: 3px;
+    position: sticky;
+    position: -webkit-sticky; /* For macOS/iOS Safari */
+    top: 0; /* Sets the sticky toolbar to be on top */
+    z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+}
+ 
+@media(max-width: 959px){
+    mat-toolbar{
+        border-radius: 0px;
+        position: sticky;
+        position: -webkit-sticky; /* For macOS/iOS Safari */
+        top: 0; /* Sets the sticky toolbar to be on top */
+        z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+    }
+}
